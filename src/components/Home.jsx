@@ -10,7 +10,7 @@ const Home = () => {
     const [loadedCoffees, setLoadedCoffees] = useState(coffees);
 
     return (
-        <div>
+        <div className='container mx-auto p-5'> 
             <h2>Welcome Coffee home: {loadedCoffees.length}</h2>
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>

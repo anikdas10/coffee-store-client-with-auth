@@ -6,11 +6,14 @@ const Header = () => {
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/addCoffee">Add Coffee</NavLink></li>
+        <li><NavLink to="/signIn">Sign In</NavLink></li>
+        <li><NavLink to="/signUp">Sign Up</NavLink></li>
+        <li><NavLink to="/users">Users</NavLink></li>
         
     </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 container mx-auto p-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

@@ -4,7 +4,8 @@ import Swal from 'sweetalert2';
 
 const Coffee = ({ coffee, loadedCoffees, setLoadedCoffees }) => {
 
-    const { _id, name, chef, taste, photo } = coffee;
+    const { _id, name, chef, taste, photoURL } = coffee;
+    console.log(photoURL);
 
     const handleDelete = _id => {
         Swal.fire({
@@ -46,7 +47,7 @@ const Coffee = ({ coffee, loadedCoffees, setLoadedCoffees }) => {
         <div className="card lg:card-side bg-base-100 shadow-xl">
             <figure>
                 <img
-                    src={photo}
+                    src={photoURL}
                     alt="coffee" />
             </figure>
             <div className="flex w-full m-4 items-center justify-between">
